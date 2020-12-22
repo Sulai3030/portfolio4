@@ -5,14 +5,16 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:vue/essential"
+        "plugin:vue/essential",
+        "plugin:vue/vue3-recommended"
     ],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
-    "parser": 'babel-eslint',
+    "parser": "vue-eslint-parser",
     "parserOptions": {
+        "parser": 'babel-eslint',
         "ecmaVersion": 2018,
         "sourceType": "module",
         "allowImportExportEverywhere": true
