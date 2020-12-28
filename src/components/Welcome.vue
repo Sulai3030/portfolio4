@@ -7,9 +7,7 @@
       <v-col
         class="hidden-sm-and-down"
         md="6"
-      >
-        
-      </v-col>
+      />    
 
       <v-col
         class="align-content-space-between layout wrap"
@@ -31,16 +29,12 @@
           >
             <base-heading>Welcome!</base-heading>
             <base-text>
-              Lorem ipsum dolor sit amet, consectetur ad
-              ipiscin elit. Etiam vulputate augue vel felis gra
-              vida porta. Lorem ipsum dolor sit amet, cons
-              ectetur adipiscing elit.<br>
-              Lorem ipsum dolor sit amet, consectetur ad
-              ipiscin elit. Etiam vulputate augue vel felis gra
-              vida porta. Lorem ipsum dolor sit amet, cons
-              ectetur adipiscing elit.</br>.
+              Ambitious, user-focused Full Stack Web Developer recently graduated from Columbia University Coding Boot Camp with experience working in teams. Possesses project management experience and experience delegating responsibilities to a team from time at Maximus where he spearheaded a project to create the audio/ADA compliant portion of a new healthcare plan for the disabled distributed in the state of New York. Sulai is flexible and a quick learner. Sulai is adaptable, communicative, knowledgeable and steadfast with excellent computer engineering skills learned in the Columbia University Coding Bootcamp where he created projects in HTML5, CSS, JavaScript, ReactJs and VueJs.
             </base-text>
-            <base-btn class="mt-4">
+            <base-btn 
+              class="mt-4" 
+              @click="doSomething"
+            >
               Learn More!
             </base-btn>
           </v-col>
@@ -53,3 +47,18 @@
     </v-row>
   </section>
 </template>
+
+<script>
+  export default {
+    name: 'Welcome',
+    methods: {
+      doSomething: function () {
+        alert("Hi, there!");
+        this.doSomethingElse();
+      },
+      doSomethingElse: function () {
+        alert("Why are you bothering me?");
+      },
+    }
+  }
+</script>

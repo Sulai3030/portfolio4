@@ -18,9 +18,14 @@
         </base-heading>
 
         <base-text class="mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipi<br>
-          scin elit. Etiam vulputate augue vel felis gravida<br>
-          porta. Lorem ipsum dolor sit amet.
+          <p class="text-left">Project 1. </p>
+          <p class="text-left">Party Dash  <a href="https://www.partydash.com/" target="_blank">https://partydash.com/ </a></p>
+          <p class="text-left">Front-End Design</p>
+          <p class="text-left">•	We built Party Dash with a simple goal in mind: to help party hosts plan parties more easily</p>
+          <p class="text-left">•	Responsibilities: Follow design specs handed down from site owner. Used CSS and HTML to create inviting website
+          Technologies used: HTML, CSS, Bootstrap</p>
+
+
         </base-text>
 
         <v-card color="secondary">
