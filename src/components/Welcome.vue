@@ -3,16 +3,11 @@
     id="welcome"
     class="overflow-hidden"
   >
-    <v-row no-gutters>
-      <v-col
-        class="hidden-sm-and-down"
-        md="6"
-      />    
-
+    <v-row no-gutters>      
       <v-col
         class="align-content-space-between layout wrap"
         cols="12"
-        md="6"
+        md="12"
         pa-5="$vuetify.breakpoint.smAndDown"
       >
         <base-bubble-1
@@ -24,10 +19,10 @@
           justify="center"
         >
           <v-col
-            cols="10"
+            cols="12"
             md="6"
           >
-            <base-heading>Welcome!</base-heading>
+            <base-heading>Sulai Sivadel</base-heading>
             <base-text>
               Ambitious, user-focused Full Stack Web Developer recently graduated from Columbia University Coding Boot Camp with experience working in teams. Possesses project management experience and experience delegating responsibilities to a team from time at Maximus where he spearheaded a project to create the audio/ADA compliant portion of a new healthcare plan for the disabled distributed in the state of New York. Sulai is flexible and a quick learner. Sulai is adaptable, communicative, knowledgeable and steadfast with excellent computer engineering skills learned in the Columbia University Coding Bootcamp where he created projects in HTML5, CSS, JavaScript, ReactJs and VueJs.
             </base-text>

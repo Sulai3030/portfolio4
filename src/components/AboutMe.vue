@@ -19,9 +19,13 @@
         </base-heading>
 
         <base-text class="mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipi<br>
-          scin elit. Etiam vulputate augue vel felis gravida<br>
-          porta. Lorem ipsum dolor sit amet.
+          Ambitious, user-focused Web and Software Developer with experience
+          working in teams and independently. 
+          <br>Has strong project management
+          experience and experience delegating responsibilities to a team from
+          time at Maximus where he spearheaded project to create the audio and ADA
+          compliant portion of a new healthcare plan for 1.5 million citizens of
+          New York State.
         </base-text>
 
         <base-subheading class="info--text">
@@ -29,8 +33,7 @@
         </base-subheading>
 
         <base-text class="mb-5">
-          Lorem ipsum dolor sit amet, consecte tur adipi scin e<br>
-          lit. Etiam vulputate augu e vel felis gravida porta.
+          Languages: JavaScript, Python, CSS, HTML5
         </base-text>
 
         <v-alert

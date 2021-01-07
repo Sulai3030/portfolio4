@@ -32,7 +32,7 @@
               style="transform: translateX(55%)"
             />
             <base-heading class="info--text">
-              Services
+              Clients
             </base-heading>
 
             <base-text class="mb-5">
