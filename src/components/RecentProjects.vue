@@ -52,10 +52,7 @@
           style="transform: rotate(180deg) translateX(25%)"
         />
 
-        <base-heading>
-          
-        </base-heading>
-
+        <base-heading></base-heading>
         <base-text class="mb-5">
           <p class="text-left">
           Project 2. 
