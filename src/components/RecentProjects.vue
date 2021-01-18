@@ -7,7 +7,7 @@
       <v-col
         class="primary text-center pa-5 white--text"
         cols="12"
-        md="12"
+        md="6"
       >
         <base-bubble-1
           style="transform: rotate(180deg) translateX(25%)"
@@ -33,63 +33,71 @@
               <li>We built Party Dash with a simple goal in mind: to help party hosts plan parties more easily</li>
             </ul>
           </p>
-          <p 
-            class="text-left"
-          >
+          <p class="text-left">
             <ul>
               <li>
                 Responsibilities: Follow design specs handed down from site owner. Used CSS and HTML to create inviting website
-            Technologies used: HTML, CSS, Bootstrap
+              </li>
+              <li>
+                Technologies used: HTML, CSS, Bootstrap
               </li>
             </ul>	
           </p>
         </base-text>
-        <v-row no-gutters>
-          <v-col
-            class="primary text-center pa-5 white--text"
-            cols="12"
-            md="6"
+      </v-col>
+    </v-row>
+
+    <v-row no-gutters>
+      <v-col
+        class="primary text-center pa-5 white--text"
+        cols="12"
+        md="6"
+      >
+        <base-bubble-1
+          style="transform: rotate(180deg) translateX(25%)"
+        />
+
+        <base-text class="mb-5">
+          <p class="text-left">
+            Project 2. 
+          </p>
+          <p class="text-left">
+            RuneSkype<br />
+            <a href="https://runeskype.herokuapp.com/play" target="_blank">https://runeskype.herokuapp.com/play</a>
+          </p>
+          <p class="text-left">
+            Front-end design, Linting, cleaning up frontend and backend code and making sure both sides work together.
+          </p>
+          <p class="text-left">
+            <ul>
+              <li>
+                RuneSkype is the newest way for friends to interact while playing your favorite Role Playing Game (RPG) RuneSkype. Playing RuneSkype is easy, just download a copy from our homepage or our repo:
+              </li>	
+            </ul>
+          </p>
+          <p 
+            class="text-left"
           >
-            <base-bubble-1
-              style="transform: rotate(180deg) translateX(25%)"
-            />
+          <ul>
+            <li>
+              Responsibilities: Wrote clean, presentable code. Kept group on time and on track to present at Project Demo Day.
+            </li>
+            <li>
+              Technologies used: ReactJS, Node, Express, Firebase, Twilio, jQuery
+            </li>	
+          </ul>
+            
+          </p>
+        </base-text>
+      </v-col>
+    </v-row>
 
-            <base-heading></base-heading>
-            <base-text class="mb-5">
-              <p class="text-left">
-                Project 2. 
-              </p>
-              <p class="text-left">
-                RuneSkype<br />
-                <a href="https://runeskype.herokuapp.com/play" target="_blank">https://runeskype.herokuapp.com/play</a>
-              </p>
-              <p class="text-left">
-                Front-end design, Linting, cleaning up frontend and backend code and making sure both sides work together.
-              </p>
-              <p class="text-left">
-                <ul>
-                  <li>
-                    RuneSkype is the newest way for friends to interact while playing your favorite Role Playing Game (RPG) RuneSkype. Playing RuneSkype is easy, just download a copy from our homepage or our repo:
-                  </li>	
-                </ul>
-              </p>
-              <p 
-                class="text-left"
-              >
-              <ul>
-                <li>
-                  Responsibilities: Wrote clean, presentable code. Kept group on time and on track to present at Project Demo Day.
-                </li>
-                <li>
-                  Technologies used: ReactJS, Node, Express, Firebase, Twilio, jQuery
-                </li>	
-              </ul>
-                
-              </p>
-            </base-text>
-          </v-col>
-        </v-row>
-
+    <v-row no-gutters>
+      <v-col
+        class="primary text-center pa-5 white--text"
+        cols="12"
+        md="6"
+      >
         <v-card color="secondary">
           <v-container class="pa-2">
             <v-row>
