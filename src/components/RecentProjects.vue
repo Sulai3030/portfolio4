@@ -44,7 +44,7 @@
             </ul>	
           </p>
         </base-text>
-         <v-row no-gutters>
+        <v-row no-gutters>
           <v-col
             class="primary text-center pa-5 white--text"
             cols="12"
@@ -88,7 +88,7 @@
               </p>
             </base-text>
           </v-col>
-         </v-row>
+        </v-row>
 
         <v-card color="secondary">
           <v-container class="pa-2">
