@@ -25,7 +25,7 @@
           experience and experience delegating responsibilities to a team from
           time at Maximus where he spearheaded project to create the audio and ADA
           compliant portion of a new healthcare plan for 1.5 million citizens of
-          New York State.
+          New York State. 
         </base-text>
 
         <base-subheading class="info--text">
