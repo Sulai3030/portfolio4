@@ -21,9 +21,10 @@
           <p class="text-left">
             Project 1. 
           </p>
-          <p class="text-left">
+          <p class="text-left font-weight-black">
             Party Dash<br />
             <a href="https://www.partydash.com/" target="_blank">https://partydash.com/</a>
+            
           </p>
           <p class="text-left">
             Front-End Design
@@ -124,6 +125,12 @@
 </template>
 
 <style lang="scss" scoped>
+#recent-projects{
+  width: 2900px;
+}
+#a{
+  color: #000;
+}
 
 </style>
 
