@@ -150,21 +150,6 @@
         cols="12"
         md="6"
       >
-        <v-card color="secondary">
-          <v-container class="pa-2">
-            <v-row>
-              <v-col
-                v-for="project in projects"
-                :key="project"
-                cols="12"
-                md="6"
-              >
-                <a href="#">
-                </a>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
       </v-col>
       <v-col
         class="hidden-sm-and-down"

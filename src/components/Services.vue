@@ -7,25 +7,19 @@
       class="accent"
       no-gutters
     >
-      <v-col
-        class="hidden-sm-and-down"
-        md="6"
-      >
+      
         <v-img
           :src="require('@/assets/services.png')"
           height="100%"
         />
-      </v-col>
+     
 
-      <v-col
-        class="text-center pa-5"
-        cols="12"
-        md="6"
-      >
+    
         <v-row
           class="fill-height"
           align="left"
           justify="left"
+          padding="e"
         >
           <v-col cols="12">
             <base-bubble-2
@@ -36,7 +30,7 @@
             </base-heading>
 
             <base-text class="mb-5">
-              <p class="text-left">BlackHealthMatters.com <a href="https://blackhealthmatters.com/" target="_blank">(https://blackhealthmatters.com)</a>     New York, NY 
+              <p class="text-left">BlackHealthMatters.com <a href="https://blackhealthmatters.com/" target="_blank">https://blackhealthmatters.com</a>     New York, NY 
                 <ul>            
                   <li>Write Health Articles targeted to an African American audience					2019 - Present</li>	
                 <li>
@@ -51,7 +45,7 @@
             <base-text class="mb-5">
               <p class="text-left">Examiner.com <a href="https://blackhealthmatters.com/" target="_blank"></a>        New York, NY 
                 <ul>            
-                  <li>New York City Budget Meals Examiner </li>	
+                  <li>New York City Budget Meals Examiner     2007-2017</li>	
                 <li>
                   Wrote, cooked and tested new recipes for Examiner.com
                 </li>	
@@ -75,28 +69,50 @@
                   </li>
                 </ul>
               </p>
-
             </base-text>
           </v-col>
-          
-          <v-col
-            v-for="(service, i) in services"
-            :key="i"
-            class="text-center mb-3"
-            md="6"
-          >
-            
-
-            <base-text>
-              <div
-                class="mb-2"
-                v-text="service.name"
-              />
-              <div v-html="service.blurb" />
+          <base-text class="mb-5">
+              <p class="text-left">The Princeton Review.com                                                                                                                                                               New York, NY
+                <p class="text-left">Website Copywriter                                                                                      
+                <a href="http://theprincetonreview.com/" target="_blank">http://www.princetonreview.com/</a>     New York, NY 
+                <ul>            
+                  <li>Proofread and rewrote (15-20) articles and promotional copy to adhere to SEO best practices which
+                  resulted in increased readership
+                  </li>	
+                <li>
+                    Performed Quality Assurance on the company's web pages to improve readability and page rank in Google
+                    searches: FAQs: The Best 169 Law Schools: 2015 Edition”; “Strategies to Succeed in Law School”;
+                    “Strategies for Second–Time Applicants”
+                </li>	
+                </ul>
+              </p>
             </base-text>
-          </v-col>
+            <base-text class="mb-5">
+              <p class="text-left">Pearson Education Group   New York, NY </p>                                                                                
+                <a href="http://www.nyccfb.info/" target="_blank">http://www.nyccfb.info/</a>     New York, NY 
+                <p class="text-left">Textbook Writer
+                <ul>    
+                  <li>Assisted Executive Editor for English Composition and Literature by researching, proofing and writing
+                      supplemental materials for an ‘Introduction Level English Textbook’ aimed at state college market and which 
+                      specifically targeted non-English majors wanting to develop the AP grammar style. 
+                  </li>	
+                  <li>
+                    Edited and proofread educational materials to ensure accuracy and consistency of information. Designed 
+                    and formulated writing exercises and study questions (20+) for each chapter in text and online versions.
+                  </li>	
+                </ul>
+              </p>
+            </base-text>
+             <base-text class="mb-5"> 
+               <p class="text-left">                                                                                        
+                <a href="https://screenrant.com/author/sulai/)/" target="_blank">ScreenRant.com</a> 
+                <p class="text-left">Writer
+                <ul>            
+                  <li>Wrote multiple daily posts of varying length about upcoming Hollywood movies on deadline </li>	
+                </ul>
+              </p>
+            </base-text>
         </v-row>
-      </v-col>
     </v-row>
   </section>
 </template>
