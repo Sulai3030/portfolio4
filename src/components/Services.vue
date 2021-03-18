@@ -7,19 +7,17 @@
       class="accent"
       no-gutters
     >
-      
-        <v-img
-          :src="require('@/assets/services.png')"
-          height="100%"
-        />
-     
-
-    
+      <v-col
+        class="text-center pa-5"
+        cols="12"
+        md="6"
+        
+      >
         <v-row
           class="fill-height"
           align="left"
-          justify="left"
-          padding="e"
+          justify="center"
+          
         >
           <v-col cols="12">
             <base-bubble-2
@@ -103,16 +101,34 @@
                 </ul>
               </p>
             </base-text>
-             <base-text class="mb-5"> 
-               <p class="text-left">                                                                                        
-                <a href="https://screenrant.com/author/sulai/)/" target="_blank">ScreenRant.com</a> 
-                <p class="text-left">Writer
-                <ul>            
-                  <li>Wrote multiple daily posts of varying length about upcoming Hollywood movies on deadline </li>	
-                </ul>
-              </p>
-            </base-text>
+            <v-card
+              class="mx-auto"
+              color="red"
+             width="1200px"
+            >
+              <v-card-text>
+                  <base-text class="mb-5"> 
+                    <p class="text- left">                                                                                        
+                      <a href="https://screenrant.com/author/sulai/)/" target="_blank">ScreenRant.com</a> 
+                      <p class="text-left">Textbook Writer
+                      <ul>            
+                        <li>Revamped website. </li>	
+                      <li>
+                        Rewrote and proofread 30 + pages editorial copy in a Drupal-based CMS. 
+                      </li>	
+                      <li>
+                        Collaborated with the Communications Department staff to maintain and update public website 
+                        prior to re-launch. Ensured coherency of portal’s copy.
+                        </li>
+                      </ul>
+                    </p>
+                  </base-text>
+              </v-card-text>
+            </v-card>
+
+
         </v-row>
+      </v-col>
     </v-row>
   </section>
 </template>

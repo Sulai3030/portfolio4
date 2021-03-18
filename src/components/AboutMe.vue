@@ -11,6 +11,7 @@
         class="pa-5"
         cols="12"
         md="6"
+        
       >
         <base-bubble-1 style="transform: translate(5%, -5%)" />
 
