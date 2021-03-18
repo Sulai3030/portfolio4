@@ -28,7 +28,7 @@
           compliant portion of a new healthcare plan for 1.5 million citizens of
           New York State. 
         </base-text>
-
+        <v-divider></v-divider>
         <base-subheading class="info--text">
           Skills
         </base-subheading>

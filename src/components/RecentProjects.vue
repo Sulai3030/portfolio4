@@ -15,7 +15,7 @@
         height="10"
       ></v-progress-linear>
     </template>
-
+    <v-divider></v-divider>
     <v-card-title>Party Dash App</v-card-title>
     <v-card-text>
       <v-row
@@ -43,14 +43,12 @@
           </p>
 
     <v-divider class="mx-4"></v-divider>
-
     <v-card-actions>
       <v-btn
         color="deep-purple lighten-2"
         text
         @click="reserve"
       >
-       
       </v-btn>
     </v-card-actions>
   </v-card>
