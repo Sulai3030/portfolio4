@@ -1,39 +1,27 @@
 <template>
-  <section
-    id="welcome"
-    class="overflow-hidden"
+<v-parallax
+    dark
+    src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
   >
-    <v-row no-gutters>      
+    <v-row
+      align="center"
+      justify="center"
+    >
       <v-col
-        class="align-content-space-between layout wrap"
+        class="text-center"
         cols="12"
-        md="12"
-        pa-5="$vuetify.breakpoint.smAndDown"
       >
-        <base-bubble-1
-          style="transform: rotate(180deg) translateY(25%)"
-        />
-
-        <v-row
-          align="center"
-          justify="center"
-        >
-          <v-col
-            cols="12"
-            md="6"
-          >
-            <base-heading>Sulai Sivadel</base-heading>
-            <base-text>
+        <h1 class="display-1 font-weight-thick mb-4">
+          Sulai Sivadel
+        </h1>
+        <h4 class="subheading font-weight-medium text-left">
+          <base-text>
               Ambitious, user-focused Full Stack Web Developer recently graduated from Columbia University Coding Boot Camp with experience working in teams. Possesses project management experience and experience delegating responsibilities to a team from time at Maximus where he spearheaded a project to create the audio/ADA compliant portion of a new healthcare plan for the disabled distributed in the state of New York. Sulai is flexible and a quick learner. Sulai is adaptable, communicative, knowledgeable and steadfast with excellent computer engineering skills learned in the Columbia University Coding Bootcamp where he created projects in HTML5, CSS, JavaScript, ReactJs and VueJs.
             </base-text>
-          </v-col>
-        </v-row>
-        <base-bubble-2
-          style="transform: rotate(180deg) translate(-200px, -15%)"
-        />
+        </h4>
       </v-col>
     </v-row>
-  </section>
+  </v-parallax>
 </template>
 
 <script>

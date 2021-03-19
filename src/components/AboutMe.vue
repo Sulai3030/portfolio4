@@ -1,17 +1,19 @@
 <template>
-  <section
-    id="about"
-    class="overflow-hidden"
-  >
-    <v-row
-      class="white"
-      no-gutters
-    >
+  <v-app>
+    <v-app-bar></v-app-bar>
+    <v-main>
+      <section
+        id="about"
+        class="overflow-hidden"
+      >
+        <v-row
+          class="white"
+          no-gutters
+          >
       <v-col
         class="pa-5"
         cols="12"
-        md="6"
-        
+        md="6"        
       >
         <base-bubble-1 style="transform: translate(5%, -5%)" />
 
@@ -28,7 +30,8 @@
           compliant portion of a new healthcare plan for 1.5 million citizens of
           New York State. 
         </base-text>
-        <v-divider></v-divider>
+        <v-divider />
+      
         <base-subheading class="info--text">
           Skills
         </base-subheading>
@@ -36,7 +39,6 @@
         <base-text class="mb-5">
           Languages: JavaScript, Python, CSS, HTML5
         </base-text>
-
         <v-alert
           outlined
           color="info"
@@ -76,8 +78,10 @@
           height="100%"
         />
       </v-col>
-    </v-row>
-  </section>
+      </v-row>
+      </section>
+    </v-main>
+  </v-app> 
 </template>
 
 <script>

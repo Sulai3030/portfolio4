@@ -4,10 +4,13 @@
     class="overflow-hidden"
   >
    <div class="text-center">
-      <v-card
+    <v-card
     :loading="loading"
     class="mx-auto my-12"
     max-width="374"
+    elevation="24"
+    outlined
+    shaped
   >
     <template>
       <v-progress-linear
@@ -60,11 +63,14 @@
     </v-card>
     </div>
     <div class="text-center">
-      <v-card
+    <v-card
     :loading="loading"
     class="mx-auto my-12"
     max-width="374"
-  >
+    elevation="24"
+    outlined
+    shaped
+    >
     <template>
       <v-progress-linear
         color="deep-purple"
@@ -81,7 +87,6 @@
       <p class="text-left">
         <a href="https://www.partydash.com/" target="_blank">https://runeskype.herokuapp.com/play</a> 
       </p>
-      
       <p class="text-left"> 
         Responisibilities: </p>
       <p class="text-left">Front-end design, Linting, cleaning up frontend and backend code and making sure both sides work together.</p>
@@ -97,7 +102,6 @@
         text
         @click="reserve"
       >
-       
       </v-btn>
     </v-card-actions>
   </v-card>
@@ -119,6 +123,9 @@
     :loading="loading"
     class="mx-auto my-12"
     max-width="374"
+    elevation="24"
+    outlined
+    shaped
   >
     <template>
       <v-progress-linear
@@ -134,7 +141,7 @@
       >
       </v-row>
       <p class="text-left">
-        <a href="https://www.partydash.com/" target="_blank">https://http://www.goatvoter.org/</a> 
+        <a href="https://www.partydash.com/" target="_blank">https://www.goatvoter.org/</a> 
       </p>
       
       <p class="text-left"> 
