@@ -13,30 +13,35 @@
         class="text-center pa-5"
         cols="12"
         md="6"
-        
       >
         <v-row
           class="fill-height"
           align="center" 
           justify="center"
           no-gutters
-          
         >
           <v-col cols="12">
             <base-bubble-2
               style="transform: translateX(55%)"
             />
-            <base-heading class="info--text">
-              Clients
-            </base-heading>
+            <v-card-title></v-card-title>
+            <v-sheet
+              color="white"
+              elevation="2"
+              height="100"
+              outlined
+              rounded
+              shaped
+              width=""
+            >
+            <h1>Clients</h1>
+            </v-sheet>
             <v-card
               elevation="24"
               outlined
               shaped
             >
-            <v-hover>
-            <base-text class="mb-5"
-            >
+            <v-hover>          
               <p class="text-left text--primary">BlackHealthMatters.com <a href="https://blackhealthmatters.com/" target="_blank">https://blackhealthmatters.com</a>     New York, NY 
                 <ul>            
                   <li>Write Health Articles targeted to an African American audience					2019 - Present</li>	
@@ -46,8 +51,7 @@
                 <li>
                   <a href="https://blackhealthmatters.com/working-with-your-doctor-when-you-have-kidney-disease-empowering-yourself-to-be-an-advocate-for-you/" target="_blank">https://blackhealthmatters.com/working-with-your-doctor-when-you-have-kidney-disease-empowering-yourself-to-be-an-advocate-for-you/</a></li>
                 </ul>
-              </p>
-            </base-text>
+              </p>          
             </v-hover>
             </v-card>
             <v-hover>
@@ -56,7 +60,6 @@
               outlined
               shaped
             >
-            <base-text class="mb-5">
               <p class="text-left font-weight-regular">Examiner.com <a href="https://blackhealthmatters.com/" target="_blank"></a>        New York, NY 
                 <ul>            
                   <li>New York City Budget Meals Examiner     2007-2017</li>	
@@ -67,7 +70,6 @@
                   Regularly manage social media platforms to advertise web content</li>
                 </ul>
               </p>
-            </base-text>
             </v-card>
             </v-hover>
             <v-hover>
@@ -76,7 +78,6 @@
               outlined
               shaped
             >
-            <base-text class="mb-5">
               <p class="text-left">City of New York Campaign Finance Board     New York, NY
                 Website Copywriter/Assistant to Director of Communications                                                                                        
                 <a href="http://www.nyccfb.info/" target="_blank">http://www.nyccfb.info/</a>     New York, NY 
@@ -91,7 +92,6 @@
                   </li>
                 </ul>
               </p>
-            </base-text>
            </v-card>
            </v-hover>
           </v-col>
@@ -101,8 +101,7 @@
               outlined
               shaped
             >
-            <base-text class="mb-5">
-              <p class="text-left">The Princeton Review.com                                                                                                                                                               New York, NY
+              <p class="text-left">The Princeton Review.com                                  New York, NY
                 <p class="text-left">Website Copywriter                                                                                      
                 <a href="http://theprincetonreview.com/" target="_blank">http://www.princetonreview.com/</a>     New York, NY 
                 <ul>            
@@ -116,7 +115,6 @@
                 </li>	
                 </ul>
               </p>
-            </base-text>
           </v-card>
          </v-hover>
          <v-hover>
@@ -125,7 +123,6 @@
               outlined
               shaped
             >
-            <base-text class="mb-5">
               <p class="text-left">Pearson Education Group   New York, NY </p>                                                                                
                 <a href="http://www.nyccfb.info/" target="_blank">http://www.nyccfb.info/</a>     New York, NY 
                 <p class="text-left">Textbook Writer
@@ -140,7 +137,6 @@
                   </li>	
                 </ul>
               </p>
-            </base-text>
           </v-card>
         </v-hover>
         <v-hover>
@@ -149,9 +145,8 @@
               outlined
               shaped
             >
-              <v-card-text>
-                  <base-text class="mb-5"> 
-                    <p class="text- left">                                                                                        
+              <v-card-text> 
+                    <p class="text-left">                                                                                        
                       <a href="https://screenrant.com/author/sulai/)/" target="_blank">ScreenRant.com</a> 
                       <p class="text-left">Textbook Writer
                       <ul>            
@@ -159,7 +154,6 @@
                         </li>	
                       </ul>
                     </p>
-                  </base-text>
               </v-card-text>
             </v-card>
           </v-hover>
@@ -170,6 +164,7 @@
 </template>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
 .services{
   width: 2900px;
   
