@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar></v-app-bar>
+    <v-app-bar />
     <v-main>
       <section
         id="about"
@@ -9,76 +9,76 @@
         <v-row
           class="white"
           no-gutters
-          >
-      <v-col
-        class="pa-5"
-        cols="12"
-        md="6"        
-      >
-        <base-bubble-1 style="transform: translate(5%, -5%)" />
-
-        <base-heading class="info--text">
-          About Me
-        </base-heading>
-
-        <base-text class="mb-2">
-          Ambitious, user-focused Web and Software Developer with experience
-          working in teams and independently. 
-          <br>Has strong project management
-          experience and experience delegating responsibilities to a team from
-          time at Maximus where he spearheaded project to create the audio and ADA
-          compliant portion of a new healthcare plan for 1.5 million citizens of
-          New York State. 
-        </base-text>
-        <v-divider />
-      
-        <base-subheading class="info--text">
-          Skills
-        </base-subheading>
-
-        <base-text class="mb-5">
-          Languages: JavaScript, Python, CSS, HTML5
-        </base-text>
-        <v-alert
-          outlined
-          color="info"
         >
-          <v-row
-            v-for="(skill, i) in skills"
-            :key="i"
-            style="color: #69A1BB;"
+          <v-col
+            class="pa-5"
+            cols="12"
+            md="6"        
           >
-            <v-col
-              class="text-uppercase"
-              cols="6"
-              v-text="skill.name"
-            />
+            <base-bubble-1 style="transform: translate(5%, -5%)" />
 
-            <v-col
-              class="text-right"
-              cols="6"
-              v-text="`${skill.value}%`"
-            />
+            <base-heading class="info--text">
+              About Me
+            </base-heading>
 
-            <v-progress-linear
-              :value="skill.value"
+            <base-text class="mb-2">
+              Ambitious, user-focused Web and Software Developer with experience
+              working in teams and independently. 
+              <br>Has strong project management
+              experience and experience delegating responsibilities to a team from
+              time at Maximus where he spearheaded project to create the audio and ADA
+              compliant portion of a new healthcare plan for 1.5 million citizens of
+              New York State. 
+            </base-text>
+            <v-divider />
+      
+            <base-subheading class="info--text">
+              Skills
+            </base-subheading>
+
+            <base-text class="mb-5">
+              Languages: JavaScript, Python, CSS, HTML5
+            </base-text>
+            <v-alert
+              outlined
               color="info"
-              height="8"
-            />
-          </v-row>
-        </v-alert>
-      </v-col>
+            >
+              <v-row
+                v-for="(skill, i) in skills"
+                :key="i"
+                style="color: #69A1BB;"
+              >
+                <v-col
+                  class="text-uppercase"
+                  cols="6"
+                  v-text="skill.name"
+                />
 
-      <v-col
-        class="hidden-sm-and-down"
-        md="6"
-      >
-        <v-img
-          :src="require('@/assets/aboutme.png')"
-          height="100%"
-        />
-      </v-col>
-      </v-row>
+                <v-col
+                  class="text-right"
+                  cols="6"
+                  v-text="`${skill.value}%`"
+                />
+
+                <v-progress-linear
+                  :value="skill.value"
+                  color="info"
+                  height="8"
+                />
+              </v-row>
+            </v-alert>
+          </v-col>
+
+          <v-col
+            class="hidden-sm-and-down"
+            md="6"
+          >
+            <v-img
+              :src="require('@/assets/aboutme.png')"
+              height="100%"
+            />
+          </v-col>
+        </v-row>
       </section>
     </v-main>
   </v-app> 

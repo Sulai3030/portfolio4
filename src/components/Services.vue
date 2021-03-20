@@ -24,7 +24,7 @@
             <base-bubble-2
               style="transform: translateX(55%)"
             />
-            <v-card-title></v-card-title>
+            <v-card-title />
             <v-sheet
               color="white"
               elevation="2"
@@ -34,102 +34,135 @@
               shaped
               width=""
             >
-            <h1>Clients</h1>
+              <h1>Clients</h1>
             </v-sheet>
             <v-card
               elevation="24"
               outlined
               shaped
             >
-            <v-hover>          
-              <p class="text-left text--primary">BlackHealthMatters.com <a href="https://blackhealthmatters.com/" target="_blank">https://blackhealthmatters.com</a>     New York, NY 
-                <ul>            
-                  <li>Write Health Articles targeted to an African American audience					2019 - Present</li>	
-                <li>
-                  <a href="https://blackhealthmatters.com/lauren-lee-talks-kidney-disease-breakthroughs/" target="_blank">https://blackhealthmatters.com/lauren-lee-talks-kidney-disease-breakthroughs/</a>
-                </li>	
-                <li>
-                  <a href="https://blackhealthmatters.com/working-with-your-doctor-when-you-have-kidney-disease-empowering-yourself-to-be-an-advocate-for-you/" target="_blank">https://blackhealthmatters.com/working-with-your-doctor-when-you-have-kidney-disease-empowering-yourself-to-be-an-advocate-for-you/</a></li>
-                </ul>
-              </p>          
-            </v-hover>
+              <v-hover>          
+                <p class="text-left text--primary">
+                  BlackHealthMatters.com <a
+                    href="https://blackhealthmatters.com/"
+                    target="_blank"
+                  >https://blackhealthmatters.com</a>     New York, NY 
+                  <ul>            
+                    <li>Write Health Articles targeted to an African American audience					2019 - Present</li>	
+                    <li>
+                      <a
+                        href="https://blackhealthmatters.com/lauren-lee-talks-kidney-disease-breakthroughs/"
+                        target="_blank"
+                      >https://blackhealthmatters.com/lauren-lee-talks-kidney-disease-breakthroughs/</a>
+                    </li>	
+                    <li>
+                      <a
+                        href="https://blackhealthmatters.com/working-with-your-doctor-when-you-have-kidney-disease-empowering-yourself-to-be-an-advocate-for-you/"
+                        target="_blank"
+                      >https://blackhealthmatters.com/working-with-your-doctor-when-you-have-kidney-disease-empowering-yourself-to-be-an-advocate-for-you/</a>
+                    </li>
+                  </ul>
+                </p>          
+              </v-hover>
             </v-card>
             <v-hover>
-            <v-card
-              elevation="24"
-              outlined
-              shaped
-            >
-              <p class="text-left font-weight-regular">Examiner.com <a href="https://blackhealthmatters.com/" target="_blank"></a>        New York, NY 
-                <ul>            
-                  <li>New York City Budget Meals Examiner     2007-2017</li>	
-                <li>
-                  Wrote, cooked and tested new recipes for Examiner.com
-                </li>	
-                <li>
-                  Regularly manage social media platforms to advertise web content</li>
-                </ul>
-              </p>
-            </v-card>
+              <v-card
+                elevation="24"
+                outlined
+                shaped
+              >
+                <p class="text-left font-weight-regular">
+                  Examiner.com <a
+                    href="https://blackhealthmatters.com/"
+                    target="_blank"
+                  />        New York, NY 
+                  <ul>            
+                    <li>New York City Budget Meals Examiner     2007-2017</li>	
+                    <li>
+                      Wrote, cooked and tested new recipes for Examiner.com
+                    </li>	
+                    <li>
+                      Regularly manage social media platforms to advertise web content
+                    </li>
+                  </ul>
+                </p>
+              </v-card>
             </v-hover>
             <v-hover>
-            <v-card
-              elevation="24"
-              outlined
-              shaped
-            >
-              <p class="text-left">City of New York Campaign Finance Board     New York, NY
-                Website Copywriter/Assistant to Director of Communications                                                                                        
-                <a href="http://www.nyccfb.info/" target="_blank">http://www.nyccfb.info/</a>     New York, NY 
-                <ul>            
-                  <li>Revamped website. </li>	
-                <li>
-                  Rewrote and proofread 30 + pages editorial copy in a Drupal-based CMS. 
-                </li>	
-                <li>
-                  Collaborated with the Communications Department staff to maintain and update public website 
-                  prior to re-launch. Ensured coherency of portal’s copy.
-                  </li>
-                </ul>
-              </p>
-           </v-card>
-           </v-hover>
+              <v-card
+                elevation="24"
+                outlined
+                shaped
+              >
+                <p class="text-left">
+                  City of New York Campaign Finance Board     New York, NY
+                  Website Copywriter/Assistant to Director of Communications                                                                                        
+                  <a
+                    href="http://www.nyccfb.info/"
+                    target="_blank"
+                  >http://www.nyccfb.info/</a>     New York, NY 
+                  <ul>            
+                    <li>Revamped website. </li>	
+                    <li>
+                      Rewrote and proofread 30 + pages editorial copy in a Drupal-based CMS. 
+                    </li>	
+                    <li>
+                      Collaborated with the Communications Department staff to maintain and update public website 
+                      prior to re-launch. Ensured coherency of portal’s copy.
+                    </li>
+                  </ul>
+                </p>
+              </v-card>
+            </v-hover>
           </v-col>
           <v-hover>
-          <v-card
+            <v-card
               elevation="24"
               outlined
               shaped
             >
-              <p class="text-left">The Princeton Review.com                                  New York, NY
-                <p class="text-left">Website Copywriter                                                                                      
-                <a href="http://theprincetonreview.com/" target="_blank">http://www.princetonreview.com/</a>     New York, NY 
+              <p class="text-left">
+                The Princeton Review.com                                  New York, NY
+              </p><p class="text-left">
+                Website Copywriter                                                                                      
+                <a
+                  href="http://theprincetonreview.com/"
+                  target="_blank"
+                >http://www.princetonreview.com/</a>     New York, NY 
                 <ul>            
-                  <li>Proofread and rewrote (15-20) articles and promotional copy to adhere to SEO best practices which
-                  resulted in increased readership
+                  <li>
+                    Proofread and rewrote (15-20) articles and promotional copy to adhere to SEO best practices which
+                    resulted in increased readership
                   </li>	
-                <li>
+                  <li>
                     Performed Quality Assurance on the company's web pages to improve readability and page rank in Google
                     searches: FAQs: The Best 169 Law Schools: 2015 Edition”; “Strategies to Succeed in Law School”;
                     “Strategies for Second–Time Applicants”
-                </li>	
+                  </li>	
                 </ul>
               </p>
-          </v-card>
-         </v-hover>
-         <v-hover>
-          <v-card
+            </v-card>
+          </v-hover>
+          <v-hover>
+            <v-card
               elevation="24"
               outlined
               shaped
             >
-              <p class="text-left">Pearson Education Group   New York, NY </p>                                                                                
-                <a href="http://www.nyccfb.info/" target="_blank">http://www.nyccfb.info/</a>     New York, NY 
-                <p class="text-left">Textbook Writer
+              <p class="text-left">
+                Pearson Education Group   New York, NY
+              </p>                                                                                
+              <a
+                href="http://www.nyccfb.info/"
+                target="_blank"
+              >http://www.nyccfb.info/</a>     New York, NY 
+              <p class="text-left">
+                Textbook Writer
                 <ul>    
-                  <li>Assisted Executive Editor for English Composition and Literature by researching, proofing and writing
-                      supplemental materials for an ‘Introduction Level English Textbook’ aimed at state college market and which 
-                      specifically targeted non-English majors wanting to develop the AP grammar style. 
+                  <li>
+                    Assisted Executive Editor for English Composition and Literature by researching, proofing and writing
+                    supplemental materials for an ‘Introduction Level English Textbook’ aimed at state college market and which 
+                    specifically targeted non-English majors wanting to develop the AP grammar style. 
                   </li>	
                   <li>
                     Edited and proofread educational materials to ensure accuracy and consistency of information. Designed 
@@ -137,23 +170,28 @@
                   </li>	
                 </ul>
               </p>
-          </v-card>
-        </v-hover>
-        <v-hover>
+            </v-card>
+          </v-hover>
+          <v-hover>
             <v-card
               elevation="24"
               outlined
               shaped
             >
               <v-card-text> 
-                    <p class="text-left">                                                                                        
-                      <a href="https://screenrant.com/author/sulai/)/" target="_blank">ScreenRant.com</a> 
-                      <p class="text-left">Textbook Writer
-                      <ul>            
-                        <li>Wrote multiple daily posts of varying length about upcoming Hollywood movies on deadline
-                        </li>	
-                      </ul>
-                    </p>
+                <p class="text-left">                                                                                        
+                  <a
+                    href="https://screenrant.com/author/sulai/)/"
+                    target="_blank"
+                  >ScreenRant.com</a> 
+                </p><p class="text-left">
+                  Textbook Writer
+                  <ul>            
+                    <li>
+                      Wrote multiple daily posts of varying length about upcoming Hollywood movies on deadline
+                    </li>	
+                  </ul>
+                </p>
               </v-card-text>
             </v-card>
           </v-hover>
@@ -163,16 +201,6 @@
   </section>
 </template>
 
-<style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
-.services{
-  width: 2900px;
-  
-  }
-.a{
-  color: #000;
-}
-</style>
 
 <script>
   export default {
@@ -196,3 +224,15 @@
     }),
   }
 </script>
+
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+.services{
+  width: 2900px;
+  
+  }
+.a{
+  color: #000;
+}
+</style>
+
