@@ -27,22 +27,18 @@
         <base-heading class="mb-5">
           Get In Touch
         </base-heading>
-
-        <v-sheet
-          max-width="600"
-          color="teal"
-          elevation="1"
-          height="250"
+        <v-btn 
+          elevation="23"
           outlined
+          raised
           rounded
-          shaped
-          width="500"
-        >
-        </v-sheet>
-        <base-btn>Send</base-btn>
+          x-large
+        ><a href="mailto:sulai3030@gmail.com"
+          >Contact Me
+        </a>
+        </v-btn>
       </v-col>
     </v-row>
-    
   </section>
 </template>
 
