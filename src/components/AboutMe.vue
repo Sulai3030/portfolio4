@@ -6,83 +6,48 @@
         id="about"
         class="overflow-hidden"
       >
-        <v-row
-          class="white"
-          no-gutters
+        <v-card
+          :loading="loading"
+          class="mx-auto my-12"
+          max-width="374"
         >
-          <v-col
-            class="pa-5"
-            cols="12"
-            md="6"        
-          >
-            <base-bubble-1 style="transform: translate(5%, -5%)" />
-
-            <base-heading class="info--text">
-              About Me
-            </base-heading>
-
-            <base-text class="mb-2">
-              Ambitious, user-focused Web and Software Developer with experience
-              working in teams and independently. 
-              <br>Has strong project management
-              experience and experience delegating responsibilities to a team from
-              time at Maximus where he spearheaded project to create the audio and ADA
-              compliant portion of a new healthcare plan for 1.5 million citizens of
-              New York State. 
-            </base-text>
-            <v-divider />
-      
-            <base-subheading class="info--text">
-              Skills
-            </base-subheading>
-
-            <base-text class="mb-5">
-              Languages: JavaScript, Python, CSS, HTML5
-            </base-text>
-            <v-alert
-              outlined
-              color="info"
-            >
-              <v-row
-                v-for="(skill, i) in skills"
-                :key="i"
-                style="color: #69A1BB;"
-              >
-                <v-col
-                  class="text-uppercase"
-                  cols="6"
-                  v-text="skill.name"
-                />
-
-                <v-col
-                  class="text-right"
-                  cols="6"
-                  v-text="`${skill.value}%`"
-                />
-
-                <v-progress-linear
-                  :value="skill.value"
-                  color="info"
-                  height="8"
-                />
-              </v-row>
-            </v-alert>
-          </v-col>
-
-          <v-col
-            class="hidden-sm-and-down"
-            md="6"
-          >
-            <v-img
-              :src="require('@/assets/aboutme.png')"
-              height="100%"
+          <template #progress>
+            <v-progress-linear
+              color="deep-purple"
+              height="10"
+              indeterminate
             />
-          </v-col>
-        </v-row>
+          </template>
+
+          <v-img
+            height="250"
+            src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+          />
+
+          <v-card-title>About Me</v-card-title>
+
+          <v-card-text>
+            <v-row
+              align="center"
+              class="mx-0"
+            >
+              Ambitious, user-focused Web and Software Developer with experience working in teams and independently.
+              Has strong project management experience and experience delegating responsibilities to a team from time at Maximus where he spearheaded project to create the audio and ADA compliant portion of a new healthcare plan for 1.5 million citizens of New York State.
+            </v-row>
+          </v-card-text>
+
+          <v-divider class="mx-4" />
+
+          <v-card-title>Tonight's availability</v-card-title>
+
+          <v-card-text />
+        </v-card>
       </section>
     </v-main>
-  </v-app> 
+  </v-app>
 </template>
+
+
 
 <script>
   export default {
@@ -104,5 +69,27 @@
         ['overline', 'Overline', '0.75rem', '500', '.1666666667em', 4],
       ],
     }),
+    items: [
+        {
+          color: '#1F7087',
+          src: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
+          title: 'Supermodel',
+          artist: 'Foster the People',
+        },
+        {
+          color: '#952175',
+          src: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
+          title: 'Halcyon Days',
+          artist: 'Ellie Goulding',
+        },
+      ],
   }
 </script>
+
+
+<style lang="scss" scoped>
+.main{
+  margin: auto;
+}
+
+</style>

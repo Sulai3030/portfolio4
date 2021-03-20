@@ -36,16 +36,8 @@
           icon: 'mdi-instagram',
         },
         {
-          name: 'Facebook',
-          icon: 'mdi-facebook',
-        },
-        {
           name: 'Email',
           icon: 'mdi-email',
-        },
-        {
-          name: 'Phone',
-          icon: 'mdi-phone',
         },
       ],
     }),
