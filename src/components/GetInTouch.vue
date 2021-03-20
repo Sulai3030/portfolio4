@@ -33,9 +33,11 @@
           raised
           rounded
           x-large
-        ><a href="mailto:sulai3030@gmail.com"
+        >
+          <a
+            href="mailto:sulai3030@gmail.com"
           >Contact Me
-        </a>
+          </a>
         </v-btn>
       </v-col>
     </v-row>
