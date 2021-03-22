@@ -7,6 +7,86 @@
         class="overflow-hidden"
       >
         <v-card
+          max-width="400"
+          class="mx-auto"
+        >
+          <v-system-bar
+            color="pink darken-2"
+            dark
+          >
+            <v-spacer />
+
+            <v-icon>mdi-window-minimize</v-icon>
+
+            <v-icon>mdi-window-maximize</v-icon>
+
+            <v-icon>mdi-close</v-icon>
+          </v-system-bar>
+
+          <v-app-bar
+            dark
+            color="#5124D6"
+          >
+            <v-toolbar-title>About Me</v-toolbar-title>
+
+            <v-spacer />
+
+            <v-btn icon>
+              <v-icon>mdi-magnify</v-icon>
+            </v-btn>
+          </v-app-bar>
+
+          <v-container>
+            <v-row dense>
+              <v-col cols="12">
+                <v-card
+                  color="#D66024"
+                  dark
+                >
+                  <v-card-title class="headline" />
+
+                  <v-card-subtitle>Listen to your favorite artists and albums whenever and wherever, online and offline.</v-card-subtitle>
+
+                  <v-card-actions>
+                    <v-btn text />
+                  </v-card-actions>
+                </v-card>
+              </v-col>
+
+              <v-col
+                v-for="(item, i) in items"
+                :key="i"
+                cols="12"
+              >
+                <v-card
+                  :color="item.color"
+                  dark
+                >
+                  <div class="d-flex flex-no-wrap justify-space-between">
+                    <div>
+                      <v-card-title
+                        class="headline"
+                        v-text="item.title"
+                      />
+
+                      <v-card-subtitle v-text="item.artist" />
+
+                      <v-card-actions />
+                    </div>
+                    <v-avatar
+                      class="ma-3"
+                      size="125"
+                      tile
+                    >
+                      <v-img :src="item.src" />
+                    </v-avatar>
+                  </div>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-card>
+        <v-card
           :loading="loading"
           class="mx-auto my-12"
           max-width="374"
@@ -17,29 +97,6 @@
               height="10"
             />
           </template>
-
-          <v-img
-            height="250"
-            src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
-          />
-
-          <v-card-title>About Me</v-card-title>
-
-          <v-card-text>
-            <v-row
-              align="center"
-              class="mx-0"
-            >
-              Ambitious, user-focused Web and Software Developer with experience working in teams and independently.
-              Has strong project management experience and experience delegating responsibilities to a team from time at Maximus where he spearheaded project to create the audio and ADA compliant portion of a new healthcare plan for 1.5 million citizens of New York State.
-            </v-row>
-          </v-card-text>
-
-          <v-divider class="mx-4" />
-
-          <v-card-title>Tonight's availability</v-card-title>
-
-          <v-card-text />
         </v-card>
       </section>
     </v-main>
