@@ -19,7 +19,9 @@
           />
         </template>
         <v-divider />
-        <v-card-title>Party Dash App</v-card-title>
+        <v-card-title color="#385F73">
+          Party Dash App
+        </v-card-title>
         <v-card-text>
           <v-row
             align="center"
@@ -207,7 +209,6 @@
 <style lang="scss" scoped>
 .recent-projects{
   width: 2900px;
-  
   }
 .a{
   color: #000;

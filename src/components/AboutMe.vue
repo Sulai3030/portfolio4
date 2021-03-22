@@ -15,7 +15,6 @@
             <v-progress-linear
               color="deep-purple"
               height="10"
-              indeterminate
             />
           </template>
 

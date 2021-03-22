@@ -37,117 +37,395 @@
               <h1>Clients</h1>
             </v-sheet>
             <v-card
-              elevation="24"
-              outlined
-              shaped
+              max-width="400"
+              class="mx-auto"
             >
-              <v-hover>          
-                <p class="text-left text--primary">
-                  BlackHealthMatters.com <a
-                    href="https://blackhealthmatters.com/"
-                    target="_blank"
-                  >https://blackhealthmatters.com</a>     New York, NY 
-                  <ul>            
-                    <li>Write Health Articles targeted to an African American audience					2019 - Present</li>	
-                    <li>
-                      <a
-                        href="https://blackhealthmatters.com/lauren-lee-talks-kidney-disease-breakthroughs/"
-                        target="_blank"
-                      >https://blackhealthmatters.com/lauren-lee-talks-kidney-disease-breakthroughs/</a>
-                    </li>	
-                    <li>
-                      <a
-                        href="https://blackhealthmatters.com/working-with-your-doctor-when-you-have-kidney-disease-empowering-yourself-to-be-an-advocate-for-you/"
-                        target="_blank"
-                      >https://blackhealthmatters.com/working-with-your-doctor-when-you-have-kidney-disease-empowering-yourself-to-be-an-advocate-for-you/</a>
-                    </li>
-                  </ul>
-                </p>          
-              </v-hover>
+              <v-system-bar
+                color="pink darken-2"
+                dark
+              >
+                <v-spacer />
+              </v-system-bar>
+              <v-app-bar
+                dark
+                color="pink"
+              >
+                <v-toolbar-title>BlackHealthMatters.com</v-toolbar-title>
+
+                <v-spacer />
+
+                <v-btn icon>
+                  <v-icon />
+                </v-btn>
+              </v-app-bar>
+              <v-container>
+                <v-row dense>
+                  <v-col cols="12">
+                    <v-card
+                      color="#385F73"
+                      dark
+                    >
+                      <v-card-title class="headline" />
+                      <ul>            
+                        <p class="text-left" /><li>Write Health Articles targeted to an African American audience					2019 - Present</li>	
+                        <li>
+                          <a
+                            href="https://blackhealthmatters.com/lauren-lee-talks-kidney-disease-breakthroughs/"
+                            target="_blank"
+                          >https://blackhealthmatters.com/lauren-lee-talks-kidney-disease-breakthroughs/</a>
+                        </li>	
+                        <li>
+                          <a
+                            href="https://blackhealthmatters.com/working-with-your-doctor-when-you-have-kidney-disease-empowering-yourself-to-be-an-advocate-for-you/"
+                            target="_blank"
+                          >https://blackhealthmatters.com/working-with-your-doctor-when-you-have-kidney-disease-empowering-yourself-to-be-an-advocate-for-you/</a>
+                        </li>
+                      </ul>
+                      <v-card-actions>
+                        <v-btn text />
+                      </v-card-actions>
+                    </v-card>
+                  </v-col>
+
+                  <v-col
+                    v-for="(item, i) in items"
+                    :key="i"
+                    cols="12"
+                  >
+                    <v-card
+                      :color="item.color"
+                      dark
+                    >
+                      <div class="d-flex flex-no-wrap justify-space-between">
+                        <div>
+                          <v-card-title
+                            class="headline"
+                            v-text="item.title"
+                          />
+
+                          <v-card-subtitle v-text="item.artist" />
+
+                          <v-card-actions>
+                            <v-btn
+                              v-if="item.artist === 'Ellie Goulding'"
+                              class="ml-2 mt-3"
+                              fab
+                              icon
+                              height="40px"
+                              right
+                              width="40px"
+                            >
+                              <v-icon />
+                            </v-btn>
+                            <v-btn
+                              v-else
+                              class="ml-2 mt-5"
+                              outlined
+                              rounded
+                              small
+                            />
+                          </v-card-actions>
+                        </div>
+                        <v-avatar
+                          class="ma-3"
+                          size="125"
+                          tile
+                        >
+                          <v-img :src="item.src" />
+                        </v-avatar>
+                      </div>
+                    </v-card>
+                  </v-col>
+                </v-row>
+              </v-container>
             </v-card>
-            <v-hover>
-              <v-card
-                elevation="24"
-                outlined
-                shaped
+            <v-card
+              max-width="400"
+              class="mx-auto"
+            >
+              <v-system-bar
+                color="pink darken-2"
+                dark
               >
-                <p class="text-left font-weight-regular">
-                  Examiner.com <a
-                    href="https://blackhealthmatters.com/"
-                    target="_blank"
-                  />        New York, NY 
-                  <ul>            
-                    <li>New York City Budget Meals Examiner     2007-2017</li>	
-                    <li>
-                      Wrote, cooked and tested new recipes for Examiner.com
-                    </li>	
-                    <li>
-                      Regularly manage social media platforms to advertise web content
-                    </li>
-                  </ul>
-                </p>
-              </v-card>
-            </v-hover>
-            <v-hover>
-              <v-card
-                elevation="24"
-                outlined
-                shaped
+                <v-spacer />
+
+                <v-icon />
+
+                <v-icon />
+
+                <v-icon />
+              </v-system-bar>
+
+              <v-app-bar
+                dark
+                color="pink"
               >
-                <p class="text-left">
-                  City of New York Campaign Finance Board     New York, NY
-                  Website Copywriter/Assistant to Director of Communications                                                                                        
-                  <a
-                    href="http://www.nyccfb.info/"
-                    target="_blank"
-                  >http://www.nyccfb.info/</a>     New York, NY 
-                  <ul>            
-                    <li>Revamped website. </li>	
-                    <li>
-                      Rewrote and proofread 30 + pages editorial copy in a Drupal-based CMS. 
-                    </li>	
-                    <li>
-                      Collaborated with the Communications Department staff to maintain and update public website 
-                      prior to re-launch. Ensured coherency of portal’s copy.
-                    </li>
-                  </ul>
-                </p>
-              </v-card>
-            </v-hover>
+                <v-toolbar-title>City of New York Campaign Finance Board New York, NY Website Copywriter/Assistant to Director of Communications http://www.nyccfb.info/ New York, NY</v-toolbar-title>
+
+                <v-spacer />
+
+                <v-btn icon>
+                  <v-icon />
+                </v-btn>
+              </v-app-bar>
+
+              <v-container>
+                <v-row dense>
+                  <v-col cols="12">
+                    <v-card
+                      color="#385F73"
+                      dark
+                    >
+                      <v-list-item>
+                        <v-list-item-content>
+                          <v-list-item-title>Assisted in relaunching website prior to election</v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-card>
+                  </v-col>
+                </v-row>
+                
+                <v-row dense>
+                  <v-col cols="12">
+                    <v-card
+                      color="#385F73"
+                      dark
+                    >
+                      <v-list-item>
+                        <p class="text-sm-left">
+                          Rewrote and proofread 30 + pages editorial copy in a Drupal-based CMS
+                        </p>
+                      </v-list-item>
+                    </v-card>
+                  </v-col>
+                  <v-col cols="12">
+                    <v-card
+                      color="#385F73"
+                      dark
+                    >
+                      <v-list-item>
+                        <v-list-item-content>
+                          <p class="text-sm-left">
+                            Collaborated with the Communications Department staff to maintain and update public website prior to re-launch. Ensured coherency of portal’s copy
+                          </p>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-card>
+                  </v-col>
+                </v-row>
+              </v-container>
+            </v-card>
+            
+            <v-card
+              max-width="400"
+              class="mx-auto"
+            >
+              <v-system-bar
+                color="pink darken-2"
+                dark
+              >
+                <v-spacer />
+
+                <v-icon />
+
+                <v-icon />
+
+                <v-icon />
+              </v-system-bar>
+
+              <v-app-bar
+                dark
+                color="pink"
+              >
+                <v-toolbar-title>
+                  <p class="text-sm-left">
+                    The Princeton Review.com
+                  </p>
+                </v-toolbar-title>
+
+                <v-spacer />
+
+                <v-btn icon>
+                  <v-icon />
+                </v-btn>
+              </v-app-bar>
+
+              <v-container>
+                <v-row dense>
+                  <v-col cols="12">
+                    <v-card
+                      color="#385F73"
+                      dark
+                    >
+                      <v-card-title class="headline" />
+
+                      <v-card-subtitle>
+                        <v-list-item>
+                          <v-list-item-content>
+                            <p class="text-left">
+                              Website Copywriter                                                                                      
+                              <a
+                                href="http://theprincetonreview.com/"
+                                target="_blank"
+                              >http://www.princetonreview.com/</a>     New York, NY 
+                              <ul>            
+                                <li>
+                                  Proofread and rewrote (15-20) articles and promotional copy to adhere to SEO best practices which
+                                  resulted in increased readership
+                                </li>	
+                                <li>
+                                  Performed Quality Assurance on the company's web pages to improve readability and page rank in Google
+                                  searches: FAQs: The Best 169 Law Schools: 2015 Edition”; “Strategies to Succeed in Law School”;
+                                  “Strategies for Second–Time Applicants”
+                                </li>	
+                              </ul>
+                            </p>
+                          </v-list-item-content>
+                        </v-list-item>
+                      </v-card-subtitle>
+                      <v-card
+                        max-width="400"
+                        class="mx-auto"
+                      >
+                        <v-system-bar
+                          color="pink darken-2"
+                          dark
+                        >
+                          <v-spacer />
+
+                          <v-icon>mdi-window-minimize</v-icon>
+
+                          <v-icon>mdi-window-maximize</v-icon>
+
+                          <v-icon>mdi-close</v-icon>
+                        </v-system-bar>
+
+                        <v-app-bar
+                          dark
+                          color="pink"
+                        >
+                          <v-toolbar-title>Pearson Education Group </v-toolbar-title>
+
+                          <v-spacer />
+
+                          <v-btn icon />
+                        </v-app-bar>
+
+                        <v-container>
+                          <v-row dense>
+                            <v-col cols="12">
+                              <v-card
+                                color="#385F73"
+                                dark
+                              >
+                                <v-card-title class="headline">
+                                  Unlimited music now
+                                </v-card-title>
+
+                                <v-card-subtitle>Listen to your favorite artists and albums whenever and wherever, online and offline.</v-card-subtitle>
+
+                                <v-card-actions>
+                                  <v-btn text>
+                                    Listen Now
+                                  </v-btn>
+                                </v-card-actions>
+                              </v-card>
+                            </v-col>
+
+                            <v-col
+                              v-for="(item, i) in items"
+                              :key="i"
+                              cols="12"
+                            >
+                              <v-card
+                                :color="item.color"
+                                dark
+                              >
+                                <div class="d-flex flex-no-wrap justify-space-between">
+                                  <div>
+                                    <v-card-title
+                                      class="headline"
+                                      v-text="item.title"
+                                    />
+
+                                    <v-card-subtitle v-text="item.artist" />
+
+                                    <v-card-actions />
+                                  </div>
+                                
+                                  <v-img :src="item.src" />
+                                </div>
+                              </v-card>
+                            </v-col>
+                          </v-row>
+                        </v-container>
+                      </v-card>
+                      <v-card-actions>
+                        <v-btn text />
+                      </v-card-actions>
+                    </v-card>
+                  </v-col>
+
+                  <v-col
+                    v-for="(item, i) in items"
+                    :key="i"
+                    cols="12"
+                  >
+                    <v-card
+                      :color="item.color"
+                      dark
+                    >
+                      <div class="d-flex flex-no-wrap justify-space-between">
+                        <div>
+                          <v-card-title
+                            class="headline"
+                            v-text="item.title"
+                          />
+                          <v-card-subtitle v-text="item.artist" />
+                          <v-card-actions>
+                            <v-btn
+                              v-if="item.artist === 'Ellie Goulding'"
+                              class="ml-2 mt-3"
+                              fab
+                              icon
+                              height="40px"
+                              right
+                              width="40px"
+                            >
+                              <v-icon />
+                            </v-btn>
+                            <v-btn
+                              v-else
+                              class="ml-2 mt-5"
+                              outlined
+                              rounded
+                              small
+                            />
+                          </v-card-actions>
+                        </div>
+
+                        <v-avatar
+                          class="ma-3"
+                          size="125"
+                          tile
+                        >
+                          <v-img :src="item.src" />
+                        </v-avatar>
+                      </div>
+                    </v-card>
+                  </v-col>
+                </v-row>
+              </v-container>
+            </v-card>
           </v-col>
+        
           <v-hover>
             <v-card
               elevation="24"
               outlined
               shaped
-            >
-              <p class="text-left">
-                The Princeton Review.com                                  New York, NY
-              </p><p class="text-left">
-                Website Copywriter                                                                                      
-                <a
-                  href="http://theprincetonreview.com/"
-                  target="_blank"
-                >http://www.princetonreview.com/</a>     New York, NY 
-                <ul>            
-                  <li>
-                    Proofread and rewrote (15-20) articles and promotional copy to adhere to SEO best practices which
-                    resulted in increased readership
-                  </li>	
-                  <li>
-                    Performed Quality Assurance on the company's web pages to improve readability and page rank in Google
-                    searches: FAQs: The Best 169 Law Schools: 2015 Edition”; “Strategies to Succeed in Law School”;
-                    “Strategies for Second–Time Applicants”
-                  </li>	
-                </ul>
-              </p>
-            </v-card>
-          </v-hover>
-          <v-hover>
-            <v-card
-              elevation="24"
-              outlined
-              shaped
+              max-width="600"
+              class="mx-auto"
             >
               <p class="text-left">
                 Pearson Education Group   New York, NY
@@ -177,6 +455,8 @@
               elevation="24"
               outlined
               shaped
+              max-width="600"
+              class="mx-auto"
             >
               <v-card-text> 
                 <p class="text-left">                                                                                        
@@ -222,6 +502,20 @@
         ['overline', 'Overline', '0.75rem', '500', '.1666666667em', 4],
       ],
     }),
+      items: [
+        {
+          color: '#1F7087',
+          src: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
+          title: 'Supermodel',
+          artist: 'Foster the People',
+        },
+        {
+          color: '#952175',
+          src: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
+          title: 'Halcyon Days',
+          artist: 'Ellie Goulding',
+        },
+      ],
   }
 </script>
 
@@ -234,5 +528,6 @@
 .a{
   color: #000;
 }
+
 </style>
 
