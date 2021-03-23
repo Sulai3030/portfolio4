@@ -45,7 +45,7 @@
                 >
                   <v-card-title class="headline" />
 
-                  <v-card-subtitle>Listen to your favorite artists and albums whenever and wherever, online and offline.</v-card-subtitle>
+                  <v-card-subtitle />
 
                   <v-card-actions>
                     <v-btn text />
@@ -61,27 +61,7 @@
                 <v-card
                   :color="item.color"
                   dark
-                >
-                  <div class="d-flex flex-no-wrap justify-space-between">
-                    <div>
-                      <v-card-title
-                        class="headline"
-                        v-text="item.title"
-                      />
-
-                      <v-card-subtitle v-text="item.artist" />
-
-                      <v-card-actions />
-                    </div>
-                    <v-avatar
-                      class="ma-3"
-                      size="125"
-                      tile
-                    >
-                      <v-img :src="item.src" />
-                    </v-avatar>
-                  </div>
-                </v-card>
+                />
               </v-col>
             </v-row>
           </v-container>
