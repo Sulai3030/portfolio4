@@ -26,7 +26,6 @@
 
 <script>
   export default {
-    name: 'Welcome',
     methods: {
       doSomething: function () {
         alert("Hi, there!");

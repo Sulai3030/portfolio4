@@ -25,15 +25,5 @@
 </template>
 
 <script>
-  export default {
-    methods: {
-      doSomething: function () {
-        alert("Hi, there!");
-        this.doSomethingElse();
-      },
-      doSomethingElse: function () {
-        alert("Why are you bothering me?");
-      },
-    }
-  }
+  
 </script>

@@ -1,86 +1,38 @@
 <template>
-  <v-app>
-    <v-app-bar />
-    <v-main>
-      <section
-        id="about"
-        class="overflow-hidden"
+  <div>
+    <v-card
+      class="d-flex flex-row mb-6"
+      :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
+      flat
+      tile
+    >
+      <v-card
+        v-for="n in 3"
+        :key="n"
+        class="pa-2"
+        outlined
+        tile
       >
-        <v-card
-          max-width="400"
-          class="mx-auto"
-        >
-          <v-system-bar
-            color="pink darken-2"
-            dark
-          >
-            <v-spacer />
-
-            <v-icon>mdi-window-minimize</v-icon>
-
-            <v-icon>mdi-window-maximize</v-icon>
-
-            <v-icon>mdi-close</v-icon>
-          </v-system-bar>
-
-          <v-app-bar
-            dark
-            color="#5124D6"
-          >
-            <v-toolbar-title>About Me</v-toolbar-title>
-
-            <v-spacer />
-
-            <v-btn icon>
-              <v-icon>mdi-magnify</v-icon>
-            </v-btn>
-          </v-app-bar>
-
-          <v-container>
-            <v-row dense>
-              <v-col cols="12">
-                <v-card
-                  color="#D66024"
-                  dark
-                >
-                  <v-card-title class="headline" />
-
-                  <v-card-subtitle />
-
-                  <v-card-actions>
-                    <v-btn text />
-                  </v-card-actions>
-                </v-card>
-              </v-col>
-
-              <v-col
-                v-for="(item, i) in items"
-                :key="i"
-                cols="12"
-              >
-                <v-card
-                  :color="item.color"
-                  dark
-                />
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-        <v-card
-          :loading="loading"
-          class="mx-auto my-12"
-          max-width="374"
-        >
-          <template #progress>
-            <v-progress-linear
-              color="deep-purple"
-              height="10"
-            />
-          </template>
-        </v-card>
-      </section>
-    </v-main>
-  </v-app>
+        Flex item {{ n }}
+      </v-card>
+    </v-card>
+    <v-card
+      class="d-flex flex-row-reverse"
+      :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
+      flat
+      tile
+    >
+      <v-card
+        v-for="n in 3"
+        :key="n"
+        class="pa-2"
+        outlined
+        tile
+      >
+        Ambitious, user-focused Full Stack Web Developer recently graduated from Columbia University Coding Boot Camp with experience working in teams. Possesses project management experience and experience delegating responsibilities to a team from time at Maximus where he spearheaded a project to create the audio/ADA compliant portion of a new healthcare plan for the disabled distributed in the state of New York. Sulai is flexible and a quick learner. Sulai is adaptable, communicative, knowledgeable and steadfast with excellent computer engineering skills learned in the Columbia University Coding Bootcamp where he created projects in HTML5, CSS, JavaScript, ReactJs and VueJs. {{ n }}
+      </v-card>
+    </v-card>
+  </div>
 </template>
 
 

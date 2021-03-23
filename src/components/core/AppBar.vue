@@ -46,12 +46,24 @@
 
       <template #extension>
         <v-tabs align-with-title>
-          <v-tab>Home</v-tab>
-          <v-tab>Apps</v-tab>
-          <v-tab>Clients</v-tab>
-          <v-tab>Experience</v-tab>
-          <v-tab>Blog</v-tab>
-          <v-tab>Recipes</v-tab>
+          <router-link to="/">
+            <v-tab>Home</v-tab>
+          </router-link>
+          <router-link to="/">
+            <v-tab>Apps</v-tab>
+          </router-link>
+          <router-link to="/">
+            <v-tab>Clients</v-tab>
+          </router-link>
+          <router-link to="/">
+            <v-tab>Experience</v-tab>
+          </router-link>
+          <router-link to="/">
+            <v-tab>Blog</v-tab>
+          </router-link>
+          <router-link to="/">
+            <v-tab>Recipes</v-tab>
+          </router-link>
         </v-tabs>
       </template>
     </v-app-bar>
@@ -66,7 +78,5 @@
 </template>
 
 <script>
-  export default {
-
-  }
+  export default {}
 </script>
