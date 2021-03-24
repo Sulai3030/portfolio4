@@ -18,9 +18,13 @@
 
       <v-app-bar-nav-icon />
 
-      <v-toolbar-title>Sulai Sivadel: Web Developer</v-toolbar-title>
+      <v-card-title
+        primary-title
+        class="justify-center"
+      >
+        Sulai Sivadel: Web Developer
+      </v-card-title>
 
-      <v-spacer />
       <v-menu
         bottom
         left
@@ -35,12 +39,7 @@
         </template>
 
         <v-list>
-          <v-list-item
-            v-for="(item, i) in items"
-            :key="i"
-          >
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item>
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list>
       </v-menu>
 
@@ -49,26 +48,29 @@
           <router-link to="/">
             <v-tab>Home</v-tab>
           </router-link>
-          <router-link to="/">
+          <router-link to="/Applications">
             <v-tab>Apps</v-tab>
           </router-link>
-          <router-link to="/">
+          <router-link to="/Clients">
             <v-tab>Clients</v-tab>
           </router-link>
-          <router-link to="/">
+          <router-link to="/Experience">
             <v-tab>Experience</v-tab>
           </router-link>
-          <router-link to="/">
+          <router-link to="/Skills">
+            <v-tab>Skills</v-tab>
+          </router-link>
+          <router-link to="/Blog">
             <v-tab>Blog</v-tab>
           </router-link>
-          <router-link to="/">
-            <v-tab>Recipes</v-tab>
+          <router-link to="/Contact">
+            <v-tab>Contact</v-tab>
           </router-link>
         </v-tabs>
       </template>
     </v-app-bar>
     <v-sheet
-      id="scrolling-techniques-4"
+      id="scrolling-techniques-3"
       class="overflow-y-auto"
       max-height="600"
     >

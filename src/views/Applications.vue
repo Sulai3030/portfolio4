@@ -15,7 +15,7 @@
         <template>
           <v-progress-linear
             color="deep-purple"
-            height="10"
+            height="12"
           />
         </template>
         <v-divider />
