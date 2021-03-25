@@ -1,15 +1,5 @@
 <template>
-  <div>
-    <welcome />
-
-    <applications />
-
-    <services />
-
-    <blog />
-
-    <contact />
-  </div>
+  <div />
 </template>
 
 <script>
